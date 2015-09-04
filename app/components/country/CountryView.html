@@ -1,0 +1,22 @@
+<div ng-controller="CountryCtrl">
+  	<div class="list-container">
+	  	<table>
+		  	<tr>
+			    <th>Name</th>
+			    <th>Country Code</th> 
+			    <th>Capital</th>
+			    <th>Area in km2</th>
+			    <th>Population</th>
+			    <th>Continent</th>
+		  	</tr>
+	  		<tr ng-repeat="country in countries">
+				<td>{{ country.countryName }}</td>
+				<td>{{ country.countryCode }}</td>
+				<td>{{ country.countryCapital }}</td>
+				<td>{{ country.areaInSqKm }}</td>
+				<td>{{ country.population }}</td>
+				<td>{{ country.continent }}</td>
+			</tr>
+	  	</table>
+	</div>
+</div>
